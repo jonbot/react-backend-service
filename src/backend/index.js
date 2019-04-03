@@ -22,12 +22,11 @@ class Backend extends Component {
 
   render() {
     return (
-      <Aux>
+      <div>
         { this.state.clientIsReady && this.props.children }
-      </Aux>
+      </div>
     );
   }
-
 }
 
 const mapDispatchToProps = (dispatch) => {
@@ -37,4 +36,4 @@ const mapDispatchToProps = (dispatch) => {
   }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(Backend); 
+export default connect(mapDispatchToProps)(Backend); 
