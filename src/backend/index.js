@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import BackendService from './service/firebase';
+import BackendService from './service';
 import * as userActions from '../store/actions/user.action';
+
 
 class Backend extends Component {
   state = {
